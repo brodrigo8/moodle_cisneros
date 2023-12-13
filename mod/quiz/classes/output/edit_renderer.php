@@ -1034,7 +1034,7 @@ class edit_renderer extends \plugin_renderer_base {
         $namestr = $qtype->local_name();
 
         $icon = $this->pix_icon('icon', $namestr, $qtype->plugin_name(), ['title' => $namestr,
-                'class' => 'activityicon', 'alt' => ' ', 'role' => 'presentation']);
+                'class' => 'activityicon', 'alt' => '']);
 
         $editicon = $this->pix_icon('t/edit', '', 'moodle', ['title' => '']);
 
