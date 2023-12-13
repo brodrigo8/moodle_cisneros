@@ -698,7 +698,7 @@ class core_course_renderer extends plugin_renderer_base {
         $instancename = html_writer::tag('span', $instancename . $altname, ['class' => 'instancename ml-1']);
 
         $imageicon = html_writer::empty_tag('img', ['src' => $mod->get_icon_url(),
-            'class' => 'activityicon', 'alt' => '', 'role' => 'presentation', 'aria-hidden' => 'true']);
+            'class' => 'activityicon', 'alt' => '', 'aria-hidden' => 'true']);
         $imageicon = html_writer::tag('span', $imageicon, ['class' => 'activityiconcontainer courseicon']);
         $activitylink = $imageicon . $instancename;
 

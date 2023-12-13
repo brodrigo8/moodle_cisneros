@@ -224,9 +224,8 @@ class core_renderer extends \core_renderer {
                     if ($button['buttontype'] === 'message') {
                         \core_message\helper::messageuser_requirejs();
                     }
-                    $image = $this->pix_icon($button['formattedimage'], $button['title'], 'moodle', array(
+                    $image = $this->pix_icon($button['formattedimage'], '', 'moodle', array(
                         'class' => 'iconsmall',
-                        'role' => 'presentation'
                     ));
                     $image .= html_writer::span($button['title'], 'header-button-title');
                 } else {
