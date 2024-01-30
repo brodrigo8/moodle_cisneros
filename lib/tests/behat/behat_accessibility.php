@@ -218,6 +218,12 @@ EOF;
                 'type' > 'tag',
                 'values' => array_merge($standardtags, $extratags),
             ],
+            // TODO: Disable the target-size rule for now until we start working towards WCAG 2.2 Level AA compliance.
+            'rules' => [
+                'target-size' => [
+                    'enabled' => false,
+                ],
+            ],
         ]);
     }
 }
